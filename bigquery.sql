@@ -35,7 +35,7 @@ WHERE
   country_name = 'United States of America'
   AND date = '2020-04-20'
 ORDER BY
-
+  cumulative_confirmed desc
 
 -- task 4
 
