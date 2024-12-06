@@ -12,15 +12,18 @@ GROUP BY
 
 -- TASK 2
 SELECT
-  date AS FECHA,
-  COUNT(*) AS total_cases_worldwide
+  subregion1_name AS state,
+  COUNT(*) AS count_of_states
 FROM
   `bigquery-public-data.covid19_open_data.covid19_open_data`
 WHERE
-  date = '2020-04-15'
-GROUP BY
-  FECHA;
+  country_name = 'United States of America'
+  AND date = '2020-04-15'AND date = '2020-04-15'
 
+GROUP BY
+  state
+ORDER BY
+  count_of_states DESC;
 
 
 
